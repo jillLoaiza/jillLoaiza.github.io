@@ -1,0 +1,7 @@
+Goals:
+    Must be mobile friendly
+
+
+Topics:
+    Loops
+        for Loops
