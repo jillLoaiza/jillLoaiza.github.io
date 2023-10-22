@@ -8,10 +8,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.highlight1{
+#main {
+    max-width: 700px;
+    padding: 10px;
+}
+
+.highlight1 {
     background-color: rgba(255, 255, 0, 0.2);
-    font-weight:900;
+    font-weight: 900;
+}
+
+h2 {
+    margin: 10px 0px;
+}
+
+.code {
+    background-color: lightgray;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0px;
 }
