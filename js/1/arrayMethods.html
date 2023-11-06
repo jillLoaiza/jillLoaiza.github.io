@@ -4,39 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  highlightjs  -->
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
+
     <title>Array Methods</title>
 </head>
 
 <body>
     <h2>Array length</h2>
     <h4>The length property returns the number of elements in an array.</h4>
-    <p>const arr = [1,2,3]</p>
-    <p>arr.length() // returns 3</p>
-
-
+    <pre><code class="language-js">
+        const arr = [1,2,3]
+        arr.length() // returns 3
+    </code></pre>
     <h2>Array pop()</h2>
     <h4>removes the last element from an array and returns that element. This method changes the array.
     </h4>
-    <p>const arr = [1,2,3]</p>
-    <p>arr.pop() // returns 3</p>
-    <p>console.log(arr = [1,2,3]) // logs [1,2]</p>
+    <pre><code class="language-js">
+    const arr = [1,2,3]
+    arr.pop() // returns 3
+    console.log(arr = [1,2,3]) // logs [1,2]   
+    </code></pre>
+
+
     <h2>Array push()</h2>
     <h4>adds the specified elements to the end of an array and returns the new length of the array. </h4>
-    <p>const arr = [1,2,3]</p>
-    <p>arr.push(44) //returns 4 (the new length of arr)</p>
-    <p>console.log(arr) //logs [1,2,3,44]</p>
+    <pre><code class="language-js">
+    const arr = [1,2,3]
+    arr.push(44) //returns 4 (the new length of arr)
+    console.log(arr) //logs [1,2,3,44]
+    </code></pre>
+
+
     <h2>Array shift()</h2>
     <h4> removes the first element from an array and returns that removed element. This method changes the array. </h4>
-    <p>const arr = [1,2,3]</p>
-    <p>arr.shift() // returns 1</p>
-    <p>console.log(arr) // logs [2,3]</p>
+    <pre><code class="language-js">
+    const arr = [1,2,3]
+    arr.shift() // returns 1
+    console.log(arr) // logs [2,3]
+    </code></pre>
     <h2>Array unshift()</h2>
     <h4>adds the specified elements to the beginning of an array and returns the new length of the array. </h4>
-    <p>const arr = [1,2,3]</p>
-    <p>arr.unshift("abc") // returns 4</p>
-    <p>console.log(arr) // logs ["abc", 1,2,3]</p>
+    <pre><code class="language-js">
+    const arr = [1,2,3]
+    arr.unshift("abc") // returns 4
+    console.log(arr) // logs ["abc", 1,2,3]
+    </code></pre>
+
+
+
     <h2>Array join()</h2>
-    
+
     <h2>Array concat()</h2>
     <h2>Array splice()</h2>
     <h2>Array slice()</h2>
