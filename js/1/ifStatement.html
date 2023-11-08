@@ -4,28 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  highlightjs  -->
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
+    <!-- end of highlightjs -->
     <title>If Statements</title>
 </head>
 
 <body>
-    <p>
-        <div>if (condition is true) {</div>
-        <div>statement is executed</div>
-        <div>}</div>
-    </p>
-
-    <p>
-        <div>if (condition1) {</div>
-        <div>statement1 is executed</div>
-        <div>} else if (condition2) {</div>
-        <div>statement2 is executed</div>
-        <div>} else if (condition3) {</div>
-        <div>statement3 is executed</div>
-        <div>. . .</div>
-        <div>} else {</div>
-        <div>statementN is executed</div>
-        <div>}</div>
-    </p>
+    <p>Example of an <span style="font-weight: 900;">if</span> statement</p>
+    <pre><code>
+    if (condition is true) {
+        statement is executed
+    }
+</code>
+    </pre>
+    <p>Example of an <span style="font-weight: 900;">if then</span> statement</p>
+    <pre><code>
+    if (condition1) {
+        statement1 is executed
+        } else {
+        statementN is executed
+    }</code></pre>
+    <p>Example of an <span style="font-weight: 900;">if else</span> statement</p>
+    <pre><code>
+    if (condition1) {
+        statement1 is executed
+        } else if (condition2) {
+        statement2 is executed
+        } else if (condition3) {
+        statement3 is executed
+        . . .
+        } else {
+        statementN is executed
+    }</code></pre>
 
 </body>
 
